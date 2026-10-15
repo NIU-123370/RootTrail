@@ -16,7 +16,7 @@ A local-first AI investigation workbench for Electron / JavaScript developers.
 
 **Evidence-Driven Debugging · Cross-Process Investigation · Human-in-the-Loop**
 
-[Capabilities](#evidence-driven-investigation) · [Target problems](#built-for-the-hard-to-find-bugs) · [The experience](#from-problem-to-evidence-to-verification) · [Deliverables](#one-investigation-leaves-results-you-can-carry-forward)
+[Capabilities](#evidence-driven-investigation) · [Target problems](#built-for-the-hard-to-find-bugs) · [The experience](#from-problem-to-evidence-to-verification) · [Deliverables](#one-investigation-leaves-results-you-can-carry-forward) · [Documentation](#project-documentation)
 
 </div>
 
@@ -80,7 +80,7 @@ The problem you just investigated leaves an entry point for verifying it again. 
 
 ## From problem to evidence to verification
 
-![RootTrail investigation experience: describe the failure and the expectation, investigate along the evidence, add clues, and keep a report plus re-runnable results.](assets/roottrail-workflow.png)
+![RootTrail investigation experience: describe the failure and the expectation, investigate along the evidence, add clues, and keep a report plus re-runnable results.](assets/roottrail-workflow-en.png)
 
 1. **State the problem.** Select a local project and provide the symptom, the trigger steps and the expected behaviour; add a working older version for comparison when you have one.
 2. **Take part in the investigation.** Review the timeline, the evidence relationships and the candidate causes; add business context or correct a hypothesis at the key moments.
@@ -107,6 +107,19 @@ Investigation records and evidence are designed to be stored locally. When a rem
 The current scope covers Electron / JavaScript projects with runnable source or a debuggable build; how much can actually be observed and reproduced depends on the target application and the run conditions.
 
 Analysis capabilities build on [REA](https://github.com/morluto/rea); RootTrail is an independent product.
+
+## Project documentation
+
+The design documents are currently Chinese-only.
+
+| Document | Contents |
+| --- | --- |
+| [01-PRD.md](01-PRD.md) | Positioning, user tasks, flows, pages, P0/P1/P2 scope, metrics and acceptance criteria. |
+| [02-Architecture.md](02-Architecture.md) | Component diagram, domain model, state machines, storage, API, REA integration, recovery and export. |
+| [03-Development-Plan.md](03-Development-Plan.md) | Feasibility validation, issue breakdown, dependencies, milestones, fixtures and 22 acceptance cases. |
+| [04-Issues.md](04-Issues.md) | 36 issues derived from the development plan: M0 8 / M1 9 / M2 7 / M3 8 / M4 4. |
+
+This repository contains product and engineering design only. No software has been implemented, and neither REA nor a target application has been run or verified.
 
 ---
 
